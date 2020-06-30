@@ -1,38 +1,19 @@
-
-<link rel="stylesheet" type="text/css" href="style.css">
-<h2><center>Genome Calculator</center></h2>
-<br>
-<div class="body">
-  <div class="wrapper"><center>
-    <span class="inline">
-      <input type="text" id="mothers eye genome" placeholder="Mother's Eyes Genome"/>
-      <input type="text" id="fathers eye genome" placeholder="Father's Eyes Genome"/></div></center>
-    </span>
-    <br>
-    <span class="inline2"><center>
-      <input type="text" id="mothers hair genome" placeholder="Mother's Hair Genome"/>
-      <input type="text" id="fathers hair genome" placeholder="Father's Hair Genome"/>
-</div>
-<br>
-<div id="wrapper">
-  <button type="button" name="calculate" onclick="punnettsquare()">Calculate</button>
-</div>
-<br>
-<table align="center"><tr><td>
+<head><link rel="stylesheet" type="text/css" href="style.css">
+</head><h2><center>[mN] Genetics Calculator</center></h2><body style=""><table align="center"><tbody><tr><td>
 <table class="tg">
     <thead>
       <tr>
-        <th class="tg-0lax" colspan="2">Genetic Mother's Genomes</th>
+        <th class="tg-0lax" colspan="2">Genetic Mother's Genome</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td class="tg-0lax">Eye</td>
-        <td class="tg-0lax"><span id="mother eye image"></span</td>
-    </tr>
+        <td class="tg-0lax" style="width:190px; height:68.75px"><center><input type="text" id="mothers eye genome" placeholder="Mother's Eyes"><span id="mother eye image"></center>
+    </span></td></tr>
     <tr>
       <td class="tg-0lax">Hair</td>
-      <td class="tg-0lax"><span id="mother hair image"></span></td>
+      <td class="tg-0lax" style="width:190px; height:68.75px"><center><input type="text" id="mothers hair genome" placeholder="Mother's Hair"><span id="mother hair image"></center></span></td>
     </tr>
     </tbody>
     </table>
@@ -40,39 +21,42 @@
 <table class="tg">
     <thead>
     <tr>
-      <th class="tg-0lax" colspan="2">Genetic Father's Genomes</th>
+      <th class="tg-0lax" colspan="2">Genetic Father's Genome</th>
     </tr>
     </thead>
     <tbody>
     <tr>
       <td class="tg-0lax">Eye</td>
-      <td class="tg-0lax"><span id="father eye image"></span></td>
+      <td class="tg-0lax" style="width:190px; height:68.75px"><center><input type="text" id="fathers eye genome" placeholder="Father's Eyes"><span id="father eye image"></center></span></td>
     </tr>
     <tr>
       <td class="tg-0lax">Hair</td>
-      <td class="tg-0lax"><span id="father hair image"></span></td>
+      <td class="tg-0lax" style="width:190px; height:68.75px"><center><input type="text" id="fathers hair genome" placeholder="Father's Hair"><span id="father hair image"></center></span></td>
     </tr>
     </tbody>
     </table>
-</td></tr></table>
+</td></tr></tbody></table>
+  </br>
+<div id="wrapper"><center>
+  <button type="button" name="calculate" onclick="punnettsquare()">Generate Offspring</button>
+  </center></div>
 <br>
-      <h><center> Possible Offspring: </center></h>
-<br>
+<h3><center>Resultant Progeny</center></h3>
 <table align="center"><tr><td>
 <table class="tg">
     <thead>
     <tr>
-      <th class="tg-0lax" colspan="2">Child 1's Genomes</th>
+      <th class="tg-0lax" colspan="2" style="width:150px">Child 1's Genome</th>
     </tr>
     </thead>
     <tbody>
     <tr>
-      <td class="tg-0lax">Eye</td>
+      <td class="tg-0lax" style="height:43.75px">Eye</td>
       <td class="tg-0lax"><span id="child1 eye image"></span></td>
     </tr>
-    <tr>
+    <tr> 
       <td class="tg-0lax">Hair</td>
-      <td class="tg-0lax"><span id="child1 hair image"></span></td>
+      <td class="tg-0lax" style="height:43.75px"><span id="child1 hair image"></span></td>
     </tr>
     </tbody>
     </table>
@@ -80,17 +64,17 @@
 <table class="tg">
     <thead>
     <tr>
-      <th class="tg-0lax" colspan="2">Child 2's Genomes</th>
+      <th class="tg-0lax" colspan="2" style="width:150px">Child 2's Genome</th>
     </tr>
     </thead>
     <tbody>
     <tr>
       <td class="tg-0lax">Eye</td>
-      <td class="tg-0lax"><span id="child2 eye image"></span></td>
+      <td class="tg-0lax" style="height:43.75px"><span id="child2 eye image"></span></td> 
     </tr>
     <tr>
       <td class="tg-0lax">Hair</td>
-      <td class="tg-0lax"><span id="child2 hair image"></span></td>
+      <td class="tg-0lax" style="height:43.75px"><span id="child2 hair image"></span></td>
     </tr>
     </tbody>
     </table>
@@ -98,17 +82,17 @@
 <table class="tg">
     <thead>
     <tr>
-      <th class="tg-0lax" colspan="2">Child 3's Genomes</th>
+      <th class="tg-0lax" colspan="2" style="width:150px">Child 3's Genome</th>
     </tr>
     </thead>
     <tbody>
     <tr>
       <td class="tg-0lax">Eye</td>
-      <td class="tg-0lax"><span id="child3 eye image"></span></td>
+      <td class="tg-0lax" style="height:43.75px"><span id="child3 eye image"></span></td>
     </tr>
     <tr>
       <td class="tg-0lax">Hair</td>
-      <td class="tg-0lax"><span id="child3 hair image"></span></td>
+      <td class="tg-0lax" style="height:43.75px"><span id="child3 hair image"></span></td>
     </tr>
     </tbody>
     </table>
@@ -116,19 +100,23 @@
 <table class="tg">
     <thead>
     <tr>
-      <th class="tg-0lax" colspan="2">Child 4's Genomes</th>
+      <th class="tg-0lax" colspan="2" style="width:150px">Child 4's Genome</th>
     </tr>
     </thead>
     <tbody>
     <tr>
       <td class="tg-0lax">Eye</td>
-      <td class="tg-0lax"><span id="child4 eye image"></span></td>
+      <td class="tg-0lax" style="height:43.75px"><span id="child4 eye image"></span></td>
     </tr>
     <tr>
       <td class="tg-0lax">Hair</td>
-      <td class="tg-0lax"><span id="child4 hair image"></span></td>
+      <td class="tg-0lax" style="height:43.75px"><span id="child4 hair image"></span></td>
     </tr>
     </tbody>
     </table>
 </td></tr></table>
+<div class="footer">
+  <p>MaddChurro#0378</p>
+</div>
+      </body>
 <script src="script.js" type="text/javascript"></script>
