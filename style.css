@@ -1,16 +1,19 @@
-/* TYPEFACES */
+/* FONT IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
-/* TABLE BORDERS */
+/* TABLES */
 .tg th {
   background: #8498ab;
   font-family: 'nunito';
   color: white;
-  text-align: left;
+  text-align: center;
 	}
 
-/* FIDDLE LAND */
+img {
+  margin-top: 6px;
+}
+
 h2 {
   font-size: 33px;
   font-family: 'merriweather'
@@ -30,5 +33,17 @@ div#wrapper {
   bottom: 0;
   color: #949494;
   font-size: 10px;
+}
+
+p {
+  text-align: center;
+  margin-top: -30px;
+  font-size: 10px;
+  color: grey;
+  margin-bottom: 22px;
+}
+
+p:before { content:'.............................................................................................................';
+  color: white;
 }
 
